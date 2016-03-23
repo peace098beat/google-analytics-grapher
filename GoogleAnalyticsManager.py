@@ -37,9 +37,8 @@ def get_service(api_name, api_version, scope, key_file_location,
       A service that is connected to the specified API.
     """
 
-
+    # Read Key FIle (.p12)
     f = open(key_file_location, 'rb')
-
     key = f.read()
 
     print 'key file location'

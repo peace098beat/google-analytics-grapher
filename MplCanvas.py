@@ -107,7 +107,7 @@ class MplCanvas(FigureCanvas):
 # Demo
 #
 ###################################################
-class MplWidget(QtGui.QWidget):
+class GUI(QtGui.QWidget):
     def __init__(self):
         QtGui.QWidget.__init__(self)
         self.canvas = MplCanvas()
@@ -120,6 +120,6 @@ class MplWidget(QtGui.QWidget):
 
 if __name__ == '__main__':
     app = QtGui.QApplication(sys.argv)
-    w = MplWidget()
+    w = GUI()
     w.show()
     sys.exit(app.exec_())
